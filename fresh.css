@@ -1,0 +1,84 @@
+body{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+    url(./background-2.jpg) center/cover no-repeat;
+}
+.text{
+    height: 300px;
+    width: 50%;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 17px;
+    font-family: tahoma;
+}
+.text p{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.text .btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.text .btn button{
+    height: 40px;
+    width: 150px;
+    font-size: 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    color: whitesmoke;
+    text-transform: uppercase;
+}
+.text .btn button:first-child{
+    background-color: rgb(220, 143, 0);
+    border: none;   
+}
+.text .btn button:first-child:hover{
+    background-color: rgb(61, 61, 190);
+    border: 1px solid white;
+
+}
+.text .btn button:last-child{
+    background-color: transparent;
+    border: 1px solid white;
+    margin-left: 20px;
+}
+.text .btn button:last-child:hover{
+    background-color: rgb(28, 137, 8);
+    border: none;
+}
+
+@media(max-width:768px){
+    .text{
+        width: 90%;
+        position: relative;
+        top: -100px;
+    }
+    .text .btn{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .text .btn button:last-child{
+        position: relative;
+        left: -10px;
+    }
+    .text .btn button{
+        width: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+}

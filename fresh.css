@@ -13,6 +13,8 @@ body{
     height: 30px;
     width: 100vw;
     background-color: #ed9531;
+    position: relative;
+    top: -150px;
 }
 .nav ul{
     display: flex;
@@ -34,6 +36,17 @@ body{
 .nav ul li a{
     text-decoration: none;
     color: aliceblue;
+}
+.search{
+    color: white;
+    position: absolute;
+    right: 30px;
+    top:-0px;
+    padding: 5px 10px;
+    font-size: 20px;
+    display: none;
+    cursor: pointer;
+
 }
 .text{
     height: 300px;
@@ -107,5 +120,11 @@ body{
         justify-content: center;
         align-items: center;
         margin-top: 20px;
+    }
+    .search{
+        display: block;
+    }
+    .nav ul{
+        display: none;
     }
 }
